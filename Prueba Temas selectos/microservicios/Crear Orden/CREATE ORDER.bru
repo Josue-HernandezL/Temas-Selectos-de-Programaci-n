@@ -1,0 +1,23 @@
+meta {
+  name: CREATE ORDER
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3003/orders
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "customerId": "f3e12fde-68b8-49bd-9d24-a3ff3f15c9b9",
+    "menuId": "19389b66-5e5b-42a0-8e21-7217e858d3b8"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

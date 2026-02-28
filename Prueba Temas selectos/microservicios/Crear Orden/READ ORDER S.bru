@@ -1,0 +1,16 @@
+meta {
+  name: READ ORDER S
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3003/orders
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

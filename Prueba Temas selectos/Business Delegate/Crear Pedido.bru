@@ -1,0 +1,22 @@
+meta {
+  name: Crear Pedido
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/order/create
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+    "product": "Mouse", "amount": 25 
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

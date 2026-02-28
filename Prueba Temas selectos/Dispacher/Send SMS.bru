@@ -1,0 +1,26 @@
+meta {
+  name: Send SMS
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/notify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "sms",
+    "payload": {
+      "phone": "+525512345678",
+      "message": "Tu código es 1234"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

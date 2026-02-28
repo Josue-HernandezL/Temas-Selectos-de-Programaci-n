@@ -1,0 +1,26 @@
+meta {
+  name: Send notiPush
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/notify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "push",
+    "payload": {
+      "noti": "Cualquier cosa",
+      "message": "Tu código es 1234"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

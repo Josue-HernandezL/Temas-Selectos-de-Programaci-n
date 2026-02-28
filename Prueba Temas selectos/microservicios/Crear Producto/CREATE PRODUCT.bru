@@ -1,0 +1,23 @@
+meta {
+  name: CREATE PRODUCT
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3002/menu
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Café Negro",
+    "price": 60
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

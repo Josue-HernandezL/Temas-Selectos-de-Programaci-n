@@ -1,0 +1,28 @@
+meta {
+  name: Reservacion de corte
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/reservar-corte
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "userId": "usr_9982",
+    "barberId": "barb_005",
+    "date": "2026-02-25T15:00:00Z",
+    "paymentDetails": {
+      "method": "tarjeta_credito",
+      "last4": "4242"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

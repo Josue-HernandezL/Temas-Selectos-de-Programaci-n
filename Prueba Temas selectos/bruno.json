@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Prueba Temas selectos",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

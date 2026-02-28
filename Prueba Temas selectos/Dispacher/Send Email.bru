@@ -1,0 +1,26 @@
+meta {
+  name: Send Email
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/notify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "email",
+    "payload": {
+      "to": "juan@empresa.com",
+      "message": "Bienvenido al sistema"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

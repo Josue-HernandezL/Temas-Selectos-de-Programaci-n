@@ -1,0 +1,22 @@
+meta {
+  name: CREATE CLIENT
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3001/customers
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Rafa"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

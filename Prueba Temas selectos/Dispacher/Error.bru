@@ -1,0 +1,23 @@
+meta {
+  name: Error
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/notify
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "paloma_mensajera",
+    "payload": {}
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
