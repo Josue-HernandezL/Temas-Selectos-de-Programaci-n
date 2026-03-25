@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+</head>
+<body>
+    <!-- Encabezado principal: toma el valor del atributo 'titulo' enviado por el controlador. -->
+    <h1 th:text="${titulo}">Título por defecto</h1>
+
+    <!-- Texto introductorio para usuarios que llegan a la tienda. -->
+    <p>Encuentra los mejores pares aquí.</p>
+
+    <!-- Navegacion a la vista de catalogo. -->
+    <a href="/catalogo">Ver el catálogo de tenis</a>
+</body>
+</html>

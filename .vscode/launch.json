@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TenisApplication<tenis>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tienda.tenis.TenisApplication",
+            "projectName": "tenis",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
